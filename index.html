@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f6fcfa13a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo-no-background.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#extracurriculars">Extracurriculars</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring CS Student</p>
+            <h1>Hi,<br>I'm <span>Divyansh</span> Kamboj</h1>
+        </div>
+    </div>
+</div>
+<! ------------------------about------------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo consequatur quae, enim sequi ad accusamus, at esse hic adipisci, nobis laborum. Saepe vitae quasi dolorem rerum optio repellat magni ullam consequatur quod ut? Eaque velit maiores placeat voluptatum hic, veniam, quae earum quam, recusandae quis saepe officia magnam reiciendis tenetur.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>X internship</li>
+                        <li><span>2023</span><br>X assistantship</li>
+                        <li><span>Lorem, ipsum.</span><br>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2023</span><br>IGCSE Board Examination</li>
+                        <li><span>2023-2025</span><br>AS and A Levels Course</li>
+                        <li><span>2023</span><br>Standardised Test</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<! -----------------------Extracurriculars------------------- -->
+<div id="extracurriculars">
+    <div class="container">
+        <h1 class="sub-title">My Extracurriculars</h1>
+        <div class="extracurricular-list">
+            <div>
+                <h2>Guitar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, perspiciatis.</p>
+                <a href="https://www.youtube.com/channel/UCrNQUQGlwOCvBLo2KDWI-zg" target="_blank">Youtube Channel</a>
+            </div>
+            <div>
+                <h2>Badminton</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, perspiciatis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Photography</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, perspiciatis.</p>
+                <a href="https://instagram.com/div.psd?igshid=YmMyMTA2M2Y=" target="_blank">Photography Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>
+<! -------------------------- My projects ------------------ -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/logo-color.png">
+                <div class="layer">
+                    <h3>The Adolescent Perspective</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta dolore sunt eligendi eum molestias asperiores cum consequuntur. Officia, quam maxime.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714.jpg">
+                <div class="layer">
+                    <h3>Education for lower grades</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta dolore sunt eligendi eum molestias asperiores cum consequuntur. Officia, quam maxime.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<! ------------------------------------- contact ---------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> dkamboj1301@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9082900620</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Divyansh-Kamboj" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Sumbit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Divyansh</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzOfxB7uubPfk0KSp38GJhSI3k4fw0qiyzkrZMnRVT5bu8VXbDjBYsVQ-2AAbM2OT5AAw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
